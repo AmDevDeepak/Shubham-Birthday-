@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shubham's Birthday 😍</title>
+    <style>
+      :root {
+        --background: 210 100% 97%;
+        --foreground: 339 20% 20%;
+        --primary: 308 56% 85%;
+        --primary-foreground: 210 22% 22%;
+        --secondary: 196 75% 88%;
+        --secondary-foreground: 210 22% 22%;
+        --accent: 211 86% 70%;
+        --accent-foreground: 210 22% 22%;
+        --destructive: 0 93% 73%;
+        --destructive-foreground: 210 22% 22%;
+        --muted: 210 100% 95%;
+        --muted-foreground: 210 22% 22%;
+        --card: 210 100% 97%;
+        --card-foreground: 210 22% 22%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 341 20% 22%;
+        --border: 210 40% 80%;
+        --input: 210 40% 56%;
+        --ring: 210 40% 60%;
+        --chart-1: 308 56% 85%;
+        --chart-2: 211 96% 70%;
+        --chart-3: 45 100% 80%;
+        --chart-4: 180 60% 85%;
+        --chart-5: 120 50% 80%;
+        --radius: 1rem;
+      }
+
+      @font-face {
+        font-family: "bday-wish";
+        src: url("Pacifico-Regular.woff");
+      }
+      .main::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Manrope", sans-serif;
+        --font-sans-serif: "Manrope";
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        font-family: "Manrope", sans-serif;
+        --font-sans-serif: "Manrope";
+      }
+
+      .float-up {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .twinkle {
+        animation: twinkle 2s infinite alternate;
+      }
+
+      .flicker {
+        animation: flicker 1s infinite;
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes twinkle {
+        0% {
+          opacity: 0.5;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes flicker {
+        0%,
+        100% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0.6;
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="main flex flex-col min-h-[100dvh] bg-gradient-to-br from-[#ffd6ff] to-[#ffb3ff] relative overflow-hidden"
+    >
+      <!-- Floating Balloons -->
+      <div class="absolute top-10 right-10 float-up">
+        <img src="balloons.png" alt="Balloon 1" class="w-10 h-10" />
+      </div>
+      <div class="absolute top-20 left-10 float-up">
+        <img src="ballon2.png" alt="Balloon 2" class="w-12 h-12" />
+      </div>
+      <div class="absolute bottom-10 right-20 float-up">
+        <img src="ballon3.png" alt="Balloon 3" class="w-8 h-8" />
+      </div>
+      <!-- Twinkling Stars -->
+      <div class="absolute top-5 left-1/2 transform -translate-x-1/2 twinkle">
+        ✨
+      </div>
+      <div class="absolute top-10 right-1/4 twinkle">✨</div>
+      <div class="absolute bottom-16 left-1/4 twinkle">✨</div>
+      <div class="absolute bottom-16 right-1/4 twinkle">✨</div>
+      <header class="px-4 lg:px-6 h-14 flex items-center justify-center">
+        <a class="flex items-center justify-center" href="#" rel="ugc">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 text-[#ff69b4]"
+          >
+            <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path>
+            <path
+              d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"
+            ></path>
+            <path d="M2 21h20"></path>
+            <path d="M7 8v3"></path>
+            <path d="M12 8v3"></path>
+            <path d="M17 8v3"></path>
+            <path d="M7 4h0.01"></path>
+            <path d="M12 4h0.01"></path>
+            <path d="M17 4h0.01"></path>
+          </svg>
+          <span class="sr-only">Shubham's Birthday</span>
+        </a>
+      </header>
+      <main
+        class="flex-1 flex flex-col items-center justify-center px-4 md:px-6 gap-6 lg:gap-12"
+      >
+        <div class="flex flex-col items-center gap-4 text-center">
+          <div class="relative">
+            <img
+              src="cake.jpeg"
+              width="200"
+              height="200"
+              alt="Birthday Cake"
+              class="max-w-[200px] flicker rounded-lg"
+              style="aspect-ratio: 200 / 200; object-fit: cover"
+            />
+            <div class="absolute top-0 lef-0 hidden" id="heeraimg">
+              <img
+                src="shubham.png"
+                width="200"
+                height="200"
+                alt="Birthday Cake"
+                class="max-w-[200px] rounded-lg"
+                style="aspect-ratio: 200 / 200; object-fit: cover"
+              />
+            </div>
+          </div>
+          <h1 class="text-3xl font-['bday-wish'] text-[#ff69b4]">
+            Happy Birthday, Shubham
+          </h1>
+        </div>
+        <div class="flex flex-col items-center gap-4 text-center max-w-md">
+          <p id="wishText" class="text-lg text-[#8b008b] hidden fade-in">
+            <span class="text-[#1591a5] wishhhh" id="wish"
+              >"Hello Shubham Bhai! "</span
+            >
+            Wishing you a day as sparkling as your personality, a day filled
+            with joy, laughter, and all the things that make you smile. May your
+            birthday be as
+            <i>special</i> as you are ! <br />
+            <span class="text-[#1591a5] font-['bday-wish']"
+              >#keep shining ✨</span
+            >
+          </p>
+          <button
+            onclick="btnClick()"
+            id="wishButton"
+            class="shadow-lg inline-flex h-10 items-center justify-center rounded-md bg-[#ff69b4] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#ff4da6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          >
+            Make a wish for Shubham 🪄
+          </button>
+          <p id="ack-text" class="text-sm text-[#f3705a] hidden fade-in mt-1">
+            Great! <br />
+            Your wish has been sent to Mr. Shubham! 🎉
+          </p>
+        </div>
+      </main>
+      <footer
+        class="flex flex-col gap-1 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6"
+      >
+        <p class="text-xs text-[#8b008b]">
+          © 2024 Shubham's Birthday. All rights reserved.
+        </p>
+        <p class="text-[5px] text-[#8b008b]">Made by Deepu with 💛</p>
+      </footer>
+    </div>
+
+    <script>
+      document
+        .getElementById("wishButton")
+        .addEventListener("click", function () {
+          var wishText = document.getElementById("wishText");
+          wishText.classList.remove("hidden");
+        });
+      document
+        .getElementById("wishButton")
+        .addEventListener("click", function () {
+          var ackText = document.getElementById("ack-text");
+          this.classList.add("hidden");
+          setTimeout(() => {
+            ackText.classList.remove("hidden");
+          }, 1000);
+        });
+
+      var heeraimg = document.getElementById("heeraimg");
+      function btnClick() {
+        heeraimg.classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
